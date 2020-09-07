@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dictionaries.js"></script>
+</head>
+<body>
+    
+    <div class="model" id="gameIntro"> 
+        <div class="model_content">
+            <h1>Welcome to Word Game</h1>
+            <p>
+                Click on the Charactors to form a word. <br/><br/>
+                The word must contain atleast 3 charactors.<br/>
+                    You will get 5, 10, 20, 30, 50 and 80 points respectively for a 3, 4, 5, 6, 7, and 8 charactor words.<br/>
+                    Achieve the target score within the timeframe to move to the next level. <br/>
+                    Click on the Submit button to submit your answer.<br/>
+                    Click on the Reset button to reset your answer and retry again.<br/>
+            </p>
+            <p>&nbsp;</p>
+            <input type="button" value="Start Game" id="startGame"/>
+        </div>
+    </div>
+
+    <div class="model" id="levelIntro"> 
+        <div class="model_content">
+            <h1>***Congratulations***</h1>
+            <p>
+                You have completed this level successfully.<br/>
+                You have scored <span id="mLevelScore"></span> in this level.<br />
+                Your total score is <span id="mTotalScore"></span>.
+            </p>
+            <p>&nbsp;</p>
+            <input type="button" value="Next Level" id="btnNextLevel"/>
+        </div>
+    </div>
+
+    <div class="model" id="gameOver"> 
+        <div class="model_content">
+            <h1>***Game Over***</h1>
+            <p>
+                The time is over.<br/>
+                You managed to reach till Level <span id="gameOverLevel"></span><br/>
+                You have scored <span id="gameOverLevelScore"></span> in this level.<br />
+                Your total score is <span id="gameOverTotalScore"></span>.
+            </p>
+            <p>&nbsp;</p>
+            <input type="button" value="Replay" id="btnReplay"/>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container" id="container">
+        <div class="foundWords_container" id="foundWords_container">
+            <b>Answers Goes here</b>
+            <hr/>
+            <span id="foundWords">
+            </span>
+        </div>
+        
+        <div class="activity_container">
+            <h1>Welcome to Word Game</h1>
+            <div class="score_container"> 
+                <h3>Current Level: <span id="level"></span></h3>
+                <h3>Total Score: <span id="totalScore"></span></h3>
+                <hr />
+                <h4>Target Score: <span id="targetScore"></span> &nbsp;&nbsp;&nbsp; Level Score: <span id="levelScore"></span>  </h4>
+                <h4>Time Limit: <span id="timeLimit"></span> </h4>
+                <hr/>
+            <p>Click on the letters in sequence to form the word.
+                <br/>Each correct answer will reward and incorrect answer will attract a panelty.
+                <br/>Click on the <b>"Submit"</b> button to answer.
+                <br/>Click on the <b>"Reset"</b> button to reset the options and answer.
+            </p>
+            </div>
+            
+            <br/>
+            <br/>
+
+            <div class="game-container">
+                <b>Users Answer: </b> 
+                <div class="fillup" id="fillup"></div>
+                <br/>
+                <br/>
+                <b>Available Charactors: </b>
+                <div class="jumble_word" id="jumble_word">
+                </div>
+                <input type="button" id="submit" value="Submit">
+                <input type="button" id="reset" value="reset">
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
