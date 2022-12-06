@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Welcome to Word Game</h1>
+        <div class="score_container"> <h3>Score: <span id="score"></span></h3>
+        <p>Click on the letters in sequence to form the word.
+            <br/>Each correct answer will reward and incorrect answer will attract a panelty.
+            <br/>Click on the <b>"Submit"</b> button to answer.
+            <br/>Click on the <b>"Pass"</b> button to move to next word without panelty.
+        </p>
+        </div>
+        
+        <br/>
+        <br/>
+
+        <div class="game-container">
+            <b>Users Answer: </b> 
+            <div class="fillup" id="fillup"></div>
+            <br/>
+            <br/>
+            <b>Available Charactors: </b>
+            <div class="jumble_word" id="jumble_word">
+
+            </div>
+            <input type="button" id="submit" value="Submit">
+            <input type="button" id="pass" value="Pass">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    
+    height: 100vh;
+    color: white;
+    background-color: blueviolet;
+
+}
+
+.drop-char{
+    border: blue 1px solid;
+    width: 30px;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.click-char{
+    background-color: white;
+    color: tomato;
+    cursor: pointer;
+    border: blue 1px solid;
+    width: 30px;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fillup{
+    display: flex;
+    text-align: center;
+    border: brown 2px solid;
+    height: 50px;
+    margin: 10px;
+}
+
+.jumble_word{
+    display: flex;
+    text-align: center;
+    border: crimson 2px solid;
+    height: 50px;
+    margin: 10px;
+}
+
